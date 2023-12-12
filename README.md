@@ -19,10 +19,3 @@ If you want to contribute to this project, follow these steps:
 4. Push to the branch: `git push origin feature/new-feature`
 5. Submit a pull request
 
-## License
-This project is licensed under the [Your License] - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-- Your Name
-- Email: your.email@example.com
-- Project Link: [GitHub Repository](https://github.com/your-username/your-repository)
