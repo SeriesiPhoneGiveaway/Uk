@@ -1,45 +1,15 @@
-# Welcome to My GitHub Page!
+# iPhone Giveaways 
 
-![GitHub Logo](https://example.com/logo.png) <!-- Replace with your image URL -->
+![iPhone Giveaway]([https://example.com/logo.png](https://www.canva.com/design/DAF7-cNcw4Q/sL1a2TdJPFtKnk6wNieSPA/edit?utm_content=DAF7-cNcw4Q&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)) <!-- Replace with your image URL -->
 
-## About Me
-
-Here's a little bit about who I am and what I do.
+## iPhones
 
 ## Featured Pins
 
 <div align="center">
 
-### Awesome Container
-
-#### Check out these amazing images!
-
-[![Image 1](https://example.com/image1.jpg)](https://example.com/link1)
-[![Image 2](https://example.com/image2.jpg)](https://example.com/link2)
-[![Image 3](https://example.com/image3.jpg)](https://example.com/link3)
+[![Image 1](https://example.com/image1.jpg)]
+[![Image 2](https://example.com/image2.jpg)]
+[![Image 3](https://example.com/image3.jpg)]
 
 </div>
-
-## More Content
-
-### Another Section
-
-<div align="center">
-
-#### Don't miss these!
-
-[![Image 4](https://example.com/image4.jpg)](https://example.com/link4)
-
-</div>
-
-### Final Section
-
-<div align="center">
-
-#### More Exciting Stuff!
-
-[![Image 5](https://example.com/image5.jpg)](https://example.com/link5)
-[![Image 6](https://example.com/image6.jpg)](https://example.com/link6)
-
-</div>
-
