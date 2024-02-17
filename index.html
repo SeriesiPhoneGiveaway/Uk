@@ -13,53 +13,49 @@
       height: 100vh;
       margin: 0;
     }
-
+    
     .container {
       text-align: center;
     }
-
+    
     .headline {
       font-size: 2rem;
       font-weight: bold;
       margin-bottom: 1rem;
     }
-
-    .wide-image {
+    
+    .image-post {
       width: 100%;
       max-width: 100%;
       height: auto;
+      margin-bottom: 1rem;
     }
-
-    .button {
-      background-color: #3569F0;
-      color: white;
+    
+    .claim-button {
       padding: 10px 20px;
-      border-radius: 20px;
-      text-decoration: none;
-      font-weight: bold;
       font-size: 1rem;
+      font-weight: bold;
+      color: white;
+      background-color: #3569F0;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
     }
-
-    .button:hover {
-      background-color: #2c5aa3;
-    }
-
-    .divider {
-      height: 1px;
-      background-color: transparent;
-      margin: 1rem auto;
+    
+    .gap {
+      margin-bottom: 1rem;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1 class="headline">iPhone Giveaways</h1>
-    <div class="divider"></div>
-    <img src="iPhone_giveaway_image_post.jpg" alt="iPhone Giveaway image" class="wide-image">
-    <div class="divider"></div>
-    <a href="#" class="button">Claim Now</a>
-    <div class="divider"></div>
-    <h2 class="headline">iPhone Giveaway Text</h2>
+    <div class="gap"></div>
+    <img src="facebook_post_image.jpg" alt="Facebook Post Image" class="image-post">
+    <div class="gap"></div>
+    <a href="#" class="claim-button">Claim Now</a>
+    <div class="gap"></div>
+    <h3 class="subheadline">iPhone Giveaway Text</h3>
   </div>
 </body>
 </html>
