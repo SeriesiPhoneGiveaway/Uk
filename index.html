@@ -24,38 +24,40 @@
       margin-bottom: 1rem;
     }
     
-    .subheadline {
-      font-size: 1.5rem;
-      margin-top: 1rem;
-      font-weight: bold;
-    }
-    
-    .divider {
+    .demarcation {
       height: 1px;
       background-color: transparent;
       margin: 1rem auto;
     }
     
-    .icon {
-      width: 100px;
-      height: 100px;
+    .wide-image {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
     }
     
-    .iphone {
-      width: 600px;
-      height: 900px;
+    .gif-button {
+      width: 200px; /* Adjust width as needed */
+      height: auto;
+      cursor: pointer;
+    }
+    
+    .headline-2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-top: 1rem;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1 class="headline">iPhone Giveaways</h1>
-    <div class="divider"></div>
-    <img src="icon_image.png" alt="Icon Image" class="icon">
-    <div class="divider"></div>
-    <h2 class="subheadline">iPhones</h2>
-    <div class="divider"></div>
-    <img src="iphone_image.jpg" alt="iPhone Image" class="iphone">
+    <div class="demarcation"></div>
+    <img src="facebook_post_image.jpg" alt="Facebook Post" class="wide-image">
+    <div class="demarcation"></div>
+    <a href="link_to_giveaway_page"><img src="button.gif" alt="Button GIF" class="gif-button"></a>
+    <div class="demarcation"></div>
+    <h2 class="headline-2">iPhone Giveaway Text</h2>
   </div>
 </body>
 </html>
