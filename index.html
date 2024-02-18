@@ -4,58 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>iPhone Giveaways</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
   <style>
     body {
+      font-family: 'DM Sans', sans-serif;
       background-color: #EDEDED;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-    
-    .container {
       text-align: center;
     }
     
     .headline {
       font-size: 2rem;
       font-weight: bold;
-      margin-bottom: 1rem;
-    }
-    
-    .image-post {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 1rem;
-    }
-    
-    .claim-button {
-      padding: 10px 20px;
-      font-size: 1rem;
-      font-weight: bold;
-      color: white;
-      background-color: #3569F0;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
+      margin-top: 1rem;
     }
     
     .gap {
-      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+    
+    .image {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    .headline2 {
+      font-size: 1.6rem; /* Reduced font size */
+      margin-top: 1.5rem; /* Reduced margin top */
+    }
+    
+    .button {
+      display: inline-block;
+      padding: 15px 30px; /* Slightly reduced padding */
+      background-color: #3569F0;
+      color: white;
+      border-radius: 20px; /* Slightly reduced border radius */
+      text-decoration: none;
+      margin-top: 0.5rem;
+      font-size: 1.3rem; /* Reduced font size */
+      font-weight: bold;
+      animation: zoomInOut 1s infinite alternate; /* Animation applied */
+    }
+    
+    .headline3 {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      font-weight: bold;
+    }
+
+    @keyframes zoomInOut {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.05); /* Zoom in to 105% */
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1 class="headline">iPhone Giveaways</h1>
-    <div class="gap"></div>
-    <img src="iPhone_giveaway_image.jpg" alt="iPhone Giveaway image" class="image-post">
-    <div class="gap"></div>
-    <a href="#" class="claim-button">Claim Now</a>
-    <div class="gap"></div>
-    <h3 class="subheadline">iPhone Giveaway Text</h3>
-  </div>
+  <h1 class="headline">iPhone Giveaways</h1>
+  <div class="gap"></div>
+  <img src="iphone_image.jpg" alt="iPhone Giveaway Image" class="image">
+  <div class="gap"></div>
+  <h2 class="headline2">Stand a Chance to win a brand new Free iPhone</h2>
+  <a href="https://seriesiphonegiveaway.github.io/Online-iPhone" class="button">Claim Now</a>
+  <div class="gap"></div>
+  <h3 class="headline3">Ultra 5G Network Speed with A15 Bionic Chip on The iPhone 14 and A16 Bionic Chip on The iPhone 14 Pro and The iPhone 14 Pro Max, The Fastest Chip in any Smartphone, Amazing Camera's, Super Retina XDR display, A Powerful  OLED Display, The Highest Brightness in a Phone and the Beautiful Dynamic Island</h3>
 </body>
 </html>
