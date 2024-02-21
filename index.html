@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>iPhone Giveaways</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=sans-serif:wght@400;500&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'DM Sans', sans-serif;
@@ -13,13 +13,13 @@
     }
     
     .headline {
-      font-size: 2rem;
+      font-size: 2.2rem;
       font-weight: bold;
       margin-top: 1rem;
     }
     
     .gap {
-      margin-top: 1rem;
+      margin-top: 1.5rem;
     }
     
     .image {
@@ -34,20 +34,21 @@
     }
 
     .headline2 {
-      font-size: 1.3rem;
-      margin-top: 0.5rem;
+      font-size: 2.2rem; /* Adjusted font-size */
+      margin-top: 0.8rem; /* Adjusted margin-top */
       display: inline-block; /* Ensure the text wraps within the container */
     }
     
     .button {
       display: inline-block;
-      padding: 15px 30px;
-      background-color: #3569F0;
+      padding: 5px 0; /* Fixed height */
+      width: calc(100% - 15%); /* Reduce width by 15% */
+      background-color: #0965FD;
       color: white;
       border-radius: 20px;
       text-decoration: none;
-      margin-top: 0.5rem;
-      font-size: 1.3rem;
+      margin-top: 0.3rem;
+      font-size: 2.5rem;
       font-weight: bold;
       animation: zoomInOut 1s infinite alternate;
     }
@@ -56,12 +57,89 @@
       text-align: center;
       margin-left: 20px;
       margin-right: 20px;
+      margin-top: 2.0rem
+      margin-top: 0.5rem; /* Adjusted margin-top */
     }
 
     .headline3 {
-      font-size: 1.3rem;
+      font-size: 2.5rem; /* Adjusted font-size */
       font-weight: bold;
       display: inline-block;
+    }
+
+    .ultra-speed {
+      font-size: 1.8rem; /* Adjusted font-size */
+    }
+
+    .additional-info {
+      font-size: 1.35rem;
+      font-weight: bold;
+      margin-top: 1rem;
+      text-align: center; /* Center align text */
+      padding: 0 20px; /* Add padding for space */
+    }
+
+    .claim-container {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 83%;
+      background-color: #FFFFFF;
+      padding: 20px;
+      border-radius: 10px;
+      z-index: 999;
+      max-height: 90%;
+      overflow-y: auto;
+    }
+
+    .claim-content {
+      margin-bottom: 20px;
+    }
+
+    .claim-button {
+      display: inline-block;
+      padding: 10px 30px;
+      background-color: #3569F0;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 5px; /* Reduced margin-bottom */
+    }
+
+    .faq-container {
+      margin-top: 5rem;
+    }
+
+    .faq-question {
+      font-size: 1.3rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .faq-answer {
+      font-size: 1.3rem;
+      display: none;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+      z-index: 998; /* Ensure the overlay is behind the claim container */
+    }
+
+    .close-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      color: #555;
     }
 
     @keyframes zoomInOut {
@@ -82,10 +160,91 @@
   <div class="headline2-container">
     <h2 class="headline2">Stand a Chance to win a brand new Free iPhone</h2>
   </div>
-  <a href="https://seriesiphonegiveaway.github.io/Online-iPhone" class="button">Claim Now</a>
-  <div class="gap"></div>
-  <div class="headline3-container">
-    <h3 class="headline3">Ultra 5G Network Speed with A15 Bionic Chip on The iPhone 14 and A16 Bionic Chip on The iPhone 14 Pro and The iPhone 14 Pro Max, The Fastest Chip in any Smartphone, Amazing Camera's, Super Retina XDR OLED Display, The Highest Brightness in a Phone with the Beautiful Dynamic Island</h3>
+  <a href="#" class="button" id="claimNowButton">Claim Now</a>
+  <div class="gap" style="margin-top: 3rem;"></div> <!-- 3rem gap -->
+  <div class="headline3-container" style="margin-top: 2rem;"> <!-- 2rem space above -->
+    <h2 class="headline3">Specifications</h2>
   </div>
+  <div class="gap" style="margin-top: 1rem;"></div> <!-- 1rem gap below -->
+  <div class="ultra-speed">
+    <p></p>
+  </div>
+  <div class="additional-info">
+    <p>Ultra 5G Network Speed With A15 Bionic Chip on The iPhone 14 and A16 Bionic Chip on The iPhone 14 Pro and The iPhone 14 Pro Max, The Fastest Chip in any Smartphone, Amazing Camera's, Super Retina XDR OLED Display, The Highest Brightness in a Phone with the Beautiful Dynamic Island</p>
+  </div>
+
+  <!-- Claim Container -->
+  <div class="overlay" id="overlay" style="display: none;"></div>
+  <div class="claim-container" id="claimContainer" style="display: none;">
+    <div class="claim-content">
+      <span class="close-button" id="closeButton">Close</span>
+      <h2>Choose the iPhone you want</h2>
+       <div>
+        <hr>
+        </div>
+        <h2>iPhone 14 Plus</h2>
+        <img src="iphone_image.jpg" alt="iPhone 14 Plus Image" class="image">
+        <p>Available, Hurry Now to win one</p>
+        <a href="#" class="claim-button">Claim iPhone</a>
+      </div>
+      <hr style="margin-bottom: 3px;"> <!-- Adjusted margin-bottom -->
+      <div>
+        <h2>iPhone 14 Pro</h2>
+        <img src="iphone_image.jpg" alt="iPhone 14 Pro Image" class="image">
+        <p>Few Units of the iPhone 14 Pro Available</p>
+        <a href="#" class="claim-button">Claim iPhone</a>
+      </div>
+      <hr style="margin-bottom: 10px;"> <!-- Adjusted margin-bottom -->
+      <div>
+        <h2>iPhone 14 Pro Max</h2>
+        <img src="iphone_image.jpg" alt="iPhone 14 Pro Max Image" class="image">
+        <p>Few Units of the iPhone 14 Pro Max Available</p>
+        <a href="#" class="claim-button">Claim iPhone</a>
+      </div>
+
+      <!-- Frequently Asked Questions -->
+      <div class="faq-container">
+        <h2>Frequently Asked Questions</h2>
+        <hr>
+        <div>
+          <h2 class="faq-question">When will I get my iPhone?</h2>
+          <p class="faq-answer">You'll Receive your iPhone Within 5-10 business days after Successful Claiming and Participation on Giveaways.</p>
+        </div>
+        <hr>
+        <div>
+          <h2 class="faq-question">How long will it take for my iPhone to be Shipped?</h2>
+          <p class="faq-answer">Typically it takes 5-7 Business days After Successful Completion of the Giveaway processes.</p>
+        </div>
+        <hr>
+        <div>
+          <h2 class="faq-question">Do I have to pay for shipping fee for me to get my iPhone?</h2>
+          <p class="faq-answer">We do not Charge for any Shipping Fee, We'll Ship your iPhone freely worldwide.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('claimNowButton').addEventListener('click', function() {
+      document.getElementById('claimContainer').style.display = 'block';
+      document.getElementById('overlay').style.display = 'block';
+    });
+
+    document.getElementById('closeButton').addEventListener('click', function() {
+      document.getElementById('claimContainer').style.display = 'none';
+      document.getElementById('overlay').style.display = 'none';
+    });
+
+    // Toggle FAQ answers
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    faqQuestions.forEach(question => {
+      question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
 </body>
 </html>
+
+
