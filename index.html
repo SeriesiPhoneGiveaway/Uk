@@ -47,13 +47,13 @@
       right: 5px;
       top: 50%;
       transform: translateY(-50%);
-      padding: 3px 8px;
+      padding: 3px 4px;
       background-color: #fff;
       color: #3569F0;
       border: none;
-      border-radius: 0.2rem;
+      border-radius: 0.5rem;
       cursor: pointer;
-      font-size: 15px;
+      font-size: 13px;
     }    
     
     .gap {
@@ -201,7 +201,7 @@
   <div class="vertical-container">
     <img src="icon.png" alt="Icon" class="icon">
     <div class="text">Exclusive iPhone Giveaways</div>
-    <button class="button">Claim iPhone</button>
+    <button class="button" id="toggleClaimButton">Claim iPhone</button>
   </div>
 
   <div class="gap"></div>
@@ -299,6 +299,11 @@
         const answer = question.nextElementSibling;
         answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
       });
+    });
+
+    document.getElementById('toggleClaimButton').addEventListener('click', function() {
+      document.getElementById('claimContainer').style.display = document.getElementById('claimContainer').style.display === 'block' ? 'none' : 'block';
+      document.getElementById('overlay').style.display = document.getElementById('overlay').style.display === 'block' ? 'none' : 'block';
     });
   </script>
 </body>
